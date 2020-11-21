@@ -6,6 +6,9 @@ provider "azurerm" {
 resource "azurerm_resource_group" "landing" {
   name     = "landing"
   location = "West US"
+  tags = {
+    Ambiente = "Desarrollo"
+  }
 }
 
 
